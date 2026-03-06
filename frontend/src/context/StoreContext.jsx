@@ -9,7 +9,7 @@ const StoreProvider = (props) => {
 
     const [cartItems, setCartItems] = useState(JSON.parse(localStorage.getItem('cartItems')) || {});
 
-    const url = process.env.VITE_API_URL;
+    const url = process.env.API_URL;
 
     const [token, setToken] = useState('');
 
