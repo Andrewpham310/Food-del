@@ -1,6 +1,8 @@
 import { createContext } from "react";
 import { useState, useEffect } from "react";
 import axios from 'axios';
+import dotenv from 'dotenv';
+dotenv.config();
 
 export const StoreContext = createContext();
 
@@ -8,7 +10,7 @@ const StoreProvider = (props) => {
 
     const [cartItems, setCartItems] = useState(JSON.parse(localStorage.getItem('cartItems')) || {});
 
-    const url = "http://localhost:4000";
+    const url = process.env.API_URL;
 
     const [token, setToken] = useState('');
 
