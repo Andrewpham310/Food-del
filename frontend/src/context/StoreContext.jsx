@@ -10,7 +10,7 @@ const StoreProvider = (props) => {
 
     const [cartItems, setCartItems] = useState(JSON.parse(localStorage.getItem('cartItems')) || {});
 
-    const url = process.env.API_URL;
+    const url = https://food-del-backend-z4k7.onrender.com;
 
     const [token, setToken] = useState('');
 
