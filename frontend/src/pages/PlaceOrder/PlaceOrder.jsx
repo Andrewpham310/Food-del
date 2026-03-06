@@ -3,8 +3,7 @@ import './PlaceOrder.css'
 import { StoreContext } from '../../context/StoreContext';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import dotenv from 'dotenv';
-dotenv.config();
+
 
 const PlaceOrder = () => {
   const { getTotalCartAmount, token, foodList, cartItems } = useContext(StoreContext);
@@ -19,7 +18,7 @@ const PlaceOrder = () => {
     country: '',
     phone: '',
   })
-  const url = process.env.API_URL;
+  const url = process.env.VITE_API_URL;
 
   const onChangeHandler = (e) => {
     const name = e.target.name;
