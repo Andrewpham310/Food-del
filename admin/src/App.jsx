@@ -9,7 +9,7 @@ import { ToastContainer } from 'react-toastify'
 
 const App = () => {
 
-    const url = process.env.VITE_API_URL;
+    const url = import.meta.env.VITE_API_URL;
 
   return (
     <div>
