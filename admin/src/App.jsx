@@ -6,11 +6,10 @@ import Add from './pages/Add/Add'
 import List from './pages/List/List'
 import Orders from './pages/Orders/Orders'
 import { ToastContainer } from 'react-toastify'
-import dotenv from 'dotenv';
-dotenv.config();
+
 const App = () => {
 
-    const url = process.env.API_URL;
+    const url = process.env.VITE_API_URL;
 
   return (
     <div>
