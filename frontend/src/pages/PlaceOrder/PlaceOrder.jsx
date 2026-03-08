@@ -18,7 +18,7 @@ const PlaceOrder = () => {
     country: '',
     phone: '',
   })
-  const url = process.env.VITE_API_URL;
+  const url = import.meta.env.VITE_API_URL;
 
   const onChangeHandler = (e) => {
     const name = e.target.name;
