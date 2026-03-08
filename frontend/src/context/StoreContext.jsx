@@ -11,7 +11,7 @@ const StoreProvider = (props) => {
 
     const [cartItems, setCartItems] = useState(JSON.parse(localStorage.getItem('cartItems')) || {});
 
-    const url = import.meta.env.VITE_API_URL;
+    const url = import.meta.env.VITE_API_URL || 'https://food-del-backend-z4k7.onrender.com';
 
     const [token, setToken] = useState('');
 
