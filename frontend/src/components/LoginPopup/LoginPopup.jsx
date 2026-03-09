@@ -55,7 +55,7 @@ const LoginPopup = ({setShowLogin}) => {
                 <img src={assets.cross_icon} alt='' onClick={() => setShowLogin(false)}/>
             </div>
             <div className='login-popup-inputs'>
-                {currentState=='Sign up' && <input onChange={onChangeHandler} value={data.name} name='name' type='text' placeholder='User name' required />}
+                {currentState=='Signup' && <input onChange={onChangeHandler} value={data.name} name='name' type='text' placeholder='User name' required />}
                 
                 <input onChange={onChangeHandler} value={data.email} name='email' type='email' placeholder='Email' required />
                 <input onChange={onChangeHandler} value={data.password} name='password' type='password' placeholder='Password' required />
